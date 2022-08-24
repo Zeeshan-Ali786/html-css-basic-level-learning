@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HMTL">
+    <meta name="description" content="HyperText Markup Language">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>we have six heading tags like h1 h2 h3 h4 h5 h6</h1>
+    <p>we are using here italic tag <i>HTML</i>!</p>
+    <p>we are using here emphasize tag <em>HTML</em>!</p>
+    <p>we are using here strong tag <strong>HTML</strong>!</p>
+    <p>we are using here bold tag <b>HTML</b>!</p>
+    <p>here we are learn about greater then and less then tag &lt;HTML&gt;!</p>
+    <p>we use copyright symbol like &copy;</p>
+    <p>how use space between two copy sumbols &copy;&nbsp;&nbsp;&nbsp;&nbsp;&copy;</p>
+    <h1>Hyperlinks</h1>
+    <br><h3>Click to go about.html by using hyperlink  <a href="about.html">click me</a></h3>
+    <p>to open my image by link  <a href="images/my_image.jpeg">My Image</a></p>
+    <p>if you want to download image <a href="images/my_image.jpeg" downlaod>Download</a></p>
+    <p style="color:blue; background-color:aqua; width:180px;">Inline styling uses here</p>
+    <h1>Images</h1>
+    <img src="images/coffe.jpg" alt="Acoffe mug on a table"> <!--this image download from unsplash--> 
+    <h1>Video and Audio</h1>
+    <!-- <video controls autoplay loop src="videos/ocean.mp">
+        your browser doesn't support videos.
+    </video> -->
+    <video width="320" height="240" autoplay controls>
+        <source src="videos/ocean.mp4" type="video/mp4">
+      </video>
+    <h1>List</h1>
+    <p>list have 3 types <b>Unordered list</b>, <b>ordered list</b> and <b>Description list</b> </p>
+    <h3>Unordered list</h3>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Courses
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+            </ul>
+        </li>
+        <li>contact</li>
+    </ul>
+    <h3>Ordered list</h3>
+    <ol>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Lazania</li>
+    </ol>
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Stylesheets </dd>
+    </dl>
+    <h1>Tables</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Student Detail</th>
+            </tr>
+            <tr>
+                <th>ID</td>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>Zeeshan</td>
+            <td>Ali</td>
+            <td>24 Aug</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Waqas</td>
+            <td>Afzal</td>
+            <td>10 Aug</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Thanks</th>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Containers</h1>
+    <div class="divv">
+        <p>div covered full width of screen infect it is a single word</p>
+        <a href="#">Link</a>
+    </div>
+    <p>
+        <span class="divv">Span</span> cover only text area
+    </p>
+    <h1>Sementic Element</h1>
+    <article>
+        <h3>Heading</h3>
+        <p>published  <time datetime="2022-08-24 12:00">Augest 24 at 12pm</time></p>
+        <p><mark class="divv">Lorem</mark> ipsum dolor sit amet consectetur adipisicing elit.
+            Earum tempora quisquam iste vero quasi consequatur officiis voluptates ipsum impedit facilis 
+            voluptas, rerum debitis at omnis labore nam, explicabo dolore fuga.</p>
+        <figure>
+            <img src="images/coffe.jpg" alt="">
+            <figcaption>Figure Caption: Coffee om a table</figcaption>
+        </figure>
+    </article>
+    <h1>Structure of webpage</h1>
+    <header>
+        <nav>
+            <ul>
+                <li>Header element use to represent introductry content</li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <section>
+            <p>section have group related content</p>
+            <article>
+                <p>it represents main content of the page
+                     and a page have only one main element</p>
+            </article>
+        </section>
+    </main>
+    <aside>aside represent content not directly related to the main content like <b>side bar</b></aside>
+    <footer></footer>
+    <h1>CSS Selectors</h1>
+    <h2>relation Selector</h2>
+    <article class="relation">
+        <p>Lorem ipsum, dolor sit amet consectetur</p>
+        <p>Lorem ipsum, dolor sit amet consectetur</p>
+        <p>Lorem ipsum, dolor sit amet consectetur</p>
+    </article>
+    <p>this paragraph come after article section article + p effects it</p>
+    <p>article + p this statement only effct para after article but
+        article ~ p this statment effct all paras after article
+    </p>
+    <h2>Psuedo class selector</h2>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+            elit.  cupiditate saepe vel unde reprehenderit, dicta deserunt 
+            iste illo hic ex esse odio recusandae ab 
+            placeat quasi.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+        <a class="linkclass" href="#">Link</a>
+        <p>Quia voluptatibus rerum nemo est</p>
+    </div>
+    <h2>Psuedo element selector</h2>
+    <h4 class="psuedoelement">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Eveniet, voluptatem unde quia aliquid, soluta harum 
+        facere hic, blanditiis omnis nesciunt earum. Officia, 
+        magnam alias facere vitae enim quo reiciendis explicabo?</h4>
+    <h2>Selector Specificity</h2>
+    <h1 class="highlight" id="specificity">In this type of selector we find more specific content like
+        if we have one class and one element tag who effecting same
+        statement then editor select class tag instead of element
+        tag becuase class tag hav more specificity then element tag and 
+        if we have id and class effect same statement then editor select 
+        id tag bcz it have more specificity then class tag and if we write !important 
+        inside element tag then editor select this bcz it has restriction
+    </h1>
+
+</body>
+</html>

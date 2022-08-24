@@ -1,0 +1,85 @@
+body{
+    padding: 10px;
+}
+i{
+    color: blue;
+}
+img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover; 
+}
+video{
+    width: 400px;
+}
+ul{
+    list-style-type: square;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid black;
+    
+    padding: 5px;
+}
+.divv{
+    background-color: aqua;
+}
+/* relational selector */
+.relation > p{
+    color: saddlebrown;
+}
+.relation ~ p{
+    color: seagreen;
+}
+.relation + p{
+    color: skyblue;
+}
+
+/* this is example of psuedo class selector */
+ul li:nth-child(even){    
+    color: brown;
+}
+div :first-child{
+    color: gold;
+}
+div :last-child{
+    background-color: gold;
+}
+div :first-of-type{
+    font-style: italic;
+}
+.linkclass:visited,
+.linkclasss:link{
+    color: dodgerblue;
+}
+.linkclass:hover,
+.linkclass:focus{
+    color: deeppink;
+}
+
+/* psuedo element selector examples */
+.psuedoelement::first-letter{
+    font-size: 140%;
+    font-weight: bold;
+}
+.psuedoelement::before{
+    content: ".....";
+    display: block;
+}
+
+/* slector specificity */
+h1{
+    color: black !important;
+}
+.highlight{
+    color: chartreuse;
+}
+#specificity{
+    color: blue;
+}
+.highlight#specificity{
+    color: springgreen;
+}
