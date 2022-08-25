@@ -1,6 +1,12 @@
 body{
     padding: 10px;
 }
+.heading{
+    text-align: center;
+    font-size: 50px;
+    color: darkgoldenrod;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
 i{
     color: blue;
 }
@@ -31,9 +37,9 @@ td,th{
 .relation > p{
     color: saddlebrown;
 }
-.relation ~ p{
+/* .relation ~ p{
     color: seagreen;
-}
+} */
 .relation + p{
     color: skyblue;
 }
@@ -43,7 +49,7 @@ ul li:nth-child(even){
     color: brown;
 }
 div :first-child{
-    color: gold;
+    color: rgb(202, 19, 19);
 }
 div :last-child{
     background-color: gold;
@@ -71,7 +77,7 @@ div :first-of-type{
 }
 
 /* slector specificity */
-h1{
+h2{
     color: black !important;
 }
 .highlight{
@@ -82,4 +88,46 @@ h1{
 }
 .highlight#specificity{
     color: springgreen;
+}
+
+/* Inheritance */
+.inheritance{
+    color: indigo;
+}
+/* strong{
+    color: initial;
+} */
+
+/* colors */
+.color{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(40, 86, 161,0.3);
+}
+
+/*Gradients*/
+.gradients{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom right, yellow, blue,aqua);
+    background: radial-gradient(yellow, blue,aqua);
+
+}
+
+/*border*/
+.border{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: solid 10px red;
+    border-width: 10px 20px;
+    border-radius: 10%;
+}
+
+/*Shadow*/
+.shadow{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    box-shadow: 0 0 50px yellow;
 }
