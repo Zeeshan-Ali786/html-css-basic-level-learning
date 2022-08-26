@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="image.css">
+    <script src="https://kit.fontawesome.com/355630d65a.js" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+     <img class="meal" src="img/meal.jpg" alt="A bowl of meal">
+     <p>Icons Download from flaticon.com</p>
+
+     <h1>CSS Sprites</h1>
+     <p>css sprite generator.this approuch is use for small images like logos and icons</p>
+     <!-- <img src="img/rocketship.png" alt="">
+     <img src="img/dishes.png" alt="">
+     <img src="img/landing.png" alt="">
+     <img src="img/saturn.png" alt="">
+     <img src="img/ufo.png" alt=""> -->
+    
+     <h1>Data Urls</h1>
+     <p>Data uri generator.com to generate data uri. bcz  of this our browser did not send a seperete http request
+        to download the image bcz this image have inside its html doc.
+    <br>by use this http request reduce and achieve faster. </p>
+    
+    <h1>Clipping</h1>
+    <p>css clip generator.com. we can clip image in a triangle circle etc.
+          then copy css and past inside class of image.
+    </p>
+    <img src="img/meal.jpg" alt="" class="clip">
+
+    <h1>High Density screen</h1>
+    <p>when your img is 400px it shown good on 1x screen but when you see it in 2x or 3x screen
+        its view is not so good so we can use any aditor to maximize pizel of image here we have 3 images 
+        of 1px 2px 3px and it is shown according to screen size
+    </p>
+    <img src="img/meal.jpg" alt="" class="meal"
+        srcset="img/meal.jpg 1x, 
+                img/meal@2x.jpg 2x,
+                img/meal@3x.jpg">
+    <img src="img/meal.jpg" alt="" class="meal">
+
+    <h1>Resolution switching</h1>
+    <p>we have to download every size of image for every screen size like mobile,
+        tab and laptop etc. responsive image breakpoints generator generate every size of image and after download every size of image write 
+        it html
+    </p>
+    <img src="img/meal.jpg" alt="" 
+        srcset="img/meal.jpg 400w, 
+                img/meal@2x.jpg 800w,
+                img/meal@3x.jpg 1200w"
+        sizes="
+        (max-width: 500px) 100vw,
+         (max-width: 700px) 50vw,
+         23vw"
+         > <!--w means width of img and vw is viewport width-->
+
+    <h1>webp</h1>
+    <p>webp image is smaller size the all other image formats so you can 
+        convert your image by using cloud conver
+    </p>
+
+    <h1>Vector Graphics</h1>
+    <p>vector graphics define by methametcal vectors(linw,curves etc)
+        . SVG background.com have beautiful background 
+    </p>
+    
+    <h1>Font Icons</h1>
+    <p>font awesome,ionicons for icon font.</p>
+    <span class="font">
+        <i class="fa-solid fa-user fa-2x"></i> <!--fa-2x twice size according to its parent-->
+    </span>
+    
+    </body>
+</html>

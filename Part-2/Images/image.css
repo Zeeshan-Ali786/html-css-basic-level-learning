@@ -1,0 +1,32 @@
+body{
+    /* background: url(../Images/img/bg-paper@2x.jpg); */
+    background: url(../Images/img/subtle-prism.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.meal{
+    width: 400px;
+    /*
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*To center an image, set left and
+     right margin to auto and make it into a block element:
+     background-attachment: fixed;
+     /* if the background attachment is fixed then the background would be 
+     ficed relatuve to the view port */
+}
+.meal:hover{
+    filter: grayscale(70%) blur(3px);
+    /* css gilter function for filter examples */
+} 
+.clip{
+    width: 200px;
+    -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+.font{
+    font-size: 2rem;
+    color: dodgerblue;
+}

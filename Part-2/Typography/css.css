@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'alexbrush';
+    src: url('Typography/fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('Typography/fonts/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+/* Styling fonts */
+body{
+    font-family: "alexbrush",Arial, Helvetica, sans-serif;
+    line-height: 1;
+
+}
+p{
+    font-weight: 400;
+    font-size: 1rem ;
+    /* letter-spacing: 1px; */
+    /* word-spacing: 1rem; */
+    /* width: 50ch; */
+    font-style: italic;
+    color: #333;
+}
+/* web fonts */
+.fonts{
+    font-family: "alexbrush",Arial, Helvetica, sans-serif;
+}
+h1{
+    margin: 3rem 0 1rem;
+}
+/* Formating Text */
+.textalign{
+    text-align: center;
+}
+.textindent{
+    text-indent: 2rem;
+}
+.textdecoration{
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.multicol{
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 3px dotted gray;
+}
+.direction{
+    direction: rtl;
+}
