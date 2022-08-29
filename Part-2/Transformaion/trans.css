@@ -1,0 +1,33 @@
+body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    This is for center the box */
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background: gold;
+    margin-bottom: 1rem;
+}
+.box:hover{
+    transform: rotate(15deg); /*it rotate 15 degree clockwise*/
+    transform: scale(3.5);   /*larger and smaller*/
+    transform: skew(15deg);   /*box tilled to the left and right for negative value*/
+    transform: translate(10px, 10px);   /*move box 10 px horizontal to the right and 10px vertical to the right*/
+    /* transform use unstead absolute and relative position */
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background: silver;
+}
+.box1:hover{
+    transform: perspective(200px) translateZ(50px);
+    /* transform: perspective(200px) rotateX(15deg); */
+    /* transform: perspective(200px) rotatey(15deg); */
+    transform-origin: 0 50% ;  
+    /* from where rotaion occur 0 0 means top left corner of box*/
+}

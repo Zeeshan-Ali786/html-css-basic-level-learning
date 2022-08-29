@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+</head>
+<body>
+    <h1 class="titleofpage">Part - 2 <strong>Forms</strong></h1>
+    <h1>Basic structure of form(without using milligram also word)</h1>
+    <form action="">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text">
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input id="email" type="email">
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>Milligram Framwork of CSS</h1>
+    <form action="">
+        <label for="text">Text Field</label>
+        <input type="text">
+        <label for="number">Number Field</label>
+        <input type="number">
+        <label for="password">Password Field</label>
+        <input type="password">
+        <label for="date">Date Field</label>
+        <input type="date">
+        <label for="email">Email Field</label>
+        <input type="email" placeholder="Email">
+        <label for="textarea">Textarea</label>
+        <textarea></textarea>
+    </form>
+    <h3>Usefull attributes for all fields</h3>
+    <ul>
+        <li><strong>value</strong>: if you write something here the input field i pre-populated.</li>
+        <li><strong>placeholder</strong></li>
+        <li><strong>readonly</strong>: user cannot change the value of input field</li>
+        <li><strong>disabled</strong>: we cant even select the input field.the value dont send to the server.</li>
+        <li><strong>maxlength</strong>: like balidation if maxlength is 5 then you can only write 5 characters.</li>
+        <li><strong>autofocus</strong>: boolean attributes when the page load this field is aotomatically focusd.</li>
+    </ul>
+    <h1 style="display: inline;">Data List </h1><p style="display: inline-block;">Suggestion list</p>
+    <form>
+        <input type="text" list="provinces">
+        <datalist id="provinces">
+             <option>Punjab</option>
+             <option>Sindh</option>
+             <option>Balochistan</option>
+             <option>Khyber Pakhtunkhwa</option>
+        </datalist>
+    </form>
+    <h1>Drop Down List</h1>
+    <form>
+        <select>
+            <option value="">Select a Course..</option>
+            <option value="1">HTML</option>
+        <!--    <option value="1" selected >HTML</option>  HTML select by default -->
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>
+        </select>
+    </form>
+    <h3>Option Group Drop down List</h3>
+    <form>
+        <select>
+            <optgroup label="Front-end Courses">
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JavaScript</option>
+            </optgroup>
+            <optgroup label="Back-end Courses">
+                <option value="1">Node.js</option>
+                <option value="2">asp.net</option>
+                <option value="3">Django</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <h1>Check Boxes</h1>
+    <form>
+        <div>
+            <input type="checkbox" id="front-end">
+            <label for="front-end" class="label-inline">Front-end</label>
+            <!-- <input type="checkbox" id="front-end" checked>
+            <label for="front-end" class="label-inline">Front-end</label>
+            <input type="checkbox" id="front-end" disabled>
+            <label for="front-end" class="label-inline">Front-end</label> -->
+        </div>
+        <div>
+            <input type="checkbox" id="back-end">
+            <label for="back-end" class="label-inline">Back-end</label>
+        </div>
+    </form>
+
+    <h1>Radio Buttons</h1>
+    <div>
+        <input type="radio" name="color" id="silver">
+        <label for="silver" class="label-inline">Silver</label>
+        <!-- <input type="radio" name="color" id="silver" checked>
+        <label for="silver" class="label-inline">Silver</label> -->
+    </div>
+    <div>
+        <input type="radio" name="color" id="gold">
+        <label for="gold" class="label-inline">Gold</label>
+        <!-- <input type="radio" name="color" id="gold" disabled>
+        <label for="gold" class="label-inline">Gold</label> -->
+    </div>
+
+    <h1>Sliders</h1>
+    <form>
+        <input type="range" min="0" max="100" value="80">
+    </form>
+
+    <h1>File Inputs</h1>
+    <form>
+        <input type="file"> <strong style="display: inline;">User can select only one file</strong>
+        <input type="file" multiple> <strong style="display: inline;">User can select multiple file</strong>
+        <input type="file" accept=".jpg"> <strong style="display: inline;">User can only select jpg files</strong>
+        <input type="file" accept="image/*"> <strong style="display: inline;">User can only select image files of any kind</strong>
+        <input type="file" accept="video/*"> <strong style="display: inline;">User can only select video files of any kind</strong>
+        <input type="file" accept="audio/*"> <strong style="display: inline;">User can only select audio files of any kind</strong>
+    </form>
+
+    <h1>Group Related Field</h1>
+    <form>
+        <fieldset>
+            <legend>Billing Address</legend>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Billing Address</legend>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </fieldset>
+        <!-- we can also use section instead of fieldset and h2 instead of legend -->
+    </form>
+
+    <h1>Hidden Field</h1>
+    <input type="hidden" name="course-id" value="1234">
+
+    <h1>Data Validation</h1>
+    <form>
+        <label for="text">Text Field</label>
+        <input type="text" required minlength="3" maxlength="10">  <!--this field is required and user have to write between 3 to 10 characters-->
+        <label for="number">Number Field</label>
+        <input type="number" required min="0" max="5">
+        <label for="date">Date Field</label>
+        <input type="date"required>
+        <label for="email">Email Field</label>
+        <input type="email" placeholder="Email" required>
+        <button type="submit">Submit</button>
+    </form>
+    <ul>
+        <li><strong>minlength :</strong> let suppose 3 then user have to write atleast 3 characters</li>
+        <li><strong>maxlength : </strong> let suppose 5 then user have to write maximum 5 characters</li>
+    </ul>
+
+    <h1>Submitting the Form</h1>
+    <!-- action attribute : where we are submitting the data
+    method attribute : how we are sending the data (POST and GET) -->
+    <!-- go to formspree and add form and then copy path and paste here in action attr then submit form and check in submissions under formspree.-->
+    <form
+    action="https://formspree.io/f/mgeqvrnr"
+    method="POST"
+  >
+        <label for="f-name">First Name</label>
+        <input type="text" id="f-name" name="first-name" placeholder="First Name">
+        <label for="l-name">Last Name</label>
+        <input type="text" id="l-name" name="last-name" placeholder="Last Name">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email">
+        <label for="gender">Gender</label> 
+        <input type="radio" name="male" name="male" id="male">
+        <label for="male" class="label-inline">Male</label>
+        <input type="radio" name="female" id="female" name="female">
+        <label for="female" class="label-inline">Female</label>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" id="dob" name="date-of-birth" placeholder="Date of Birth">
+        <label for="province">Province</label>
+        <select name="Province">
+            <option value="">Select Province</option>
+            <option value="1">Punjab</option>
+            <option value="1">Sindh</option>
+            <option value="1">Balochistan</option>
+            <option value="1">Khyber Pakhtunkhwa</option>
+        </select>
+        <label for="hobbies">Hobby</label>
+        <div>
+            <input type="checkbox" id="cricket" name="cricket">
+            <label for="cricket" class="label-inline">Cricket</label>
+            <input type="checkbox" id="football" name="football">
+            <label for="football" class="label-inline">Football</label>
+            <input type="checkbox" id="hockey" name="hockey">
+            <label for="hockey" class="label-inline">Hockey</label>
+            <input type="checkbox" id="badminton" name="badminton">
+            <label for="badminton" class="label-inline">Badminton</label>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        
+
+    </form>
+
+</body>
+</html>

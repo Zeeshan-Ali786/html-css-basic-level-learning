@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: darkslategrey;
+}
+@keyframes pop{
+    0%{
+        transform: scale(1);
+    }
+
+    25%{
+        transform: scale(1.3);
+    }
+    50%{
+        transform: rotate(45deg);
+        background-color: tomato;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/* you can apply animation more then one content by using this class */
+.animation-pop{
+    animation-name: pop;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;    /*how many time you run the animation*/
+    animation-timing-function: linear;
+    animation-direction: normal;   /*place anim form start to end according to pop key function*/
+
+}
